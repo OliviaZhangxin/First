@@ -21,6 +21,14 @@ a:active {
 .blue {
   color: skyblue;
 }
+th {
+  text-align: center;
+}
+.table > thead > tr > td,
+.table > tbody > tr > td,
+.table > tfoot > tr > td {
+  vertical-align: middle;
+}
 /*首页侧边栏样式*/
 .lt-aside {
   z-index: 999;
