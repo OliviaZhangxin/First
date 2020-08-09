@@ -1,10 +1,100 @@
+body {
+    transition: padding 1s;
+}
 .bg-color {
     background-color: #222D32;
 }
-.in {
-    height: 200px;
-    // background-color: #fff;
-}
+
 .mt-150 {
     margin-top: 150px;
+}
+.pl-180 {
+    padding-left: 180px;
+}
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+    color: #ffff;
+    text-decoration: none;
+}
+.blue {
+    color:skyblue;
+}
+/*首页侧边栏样式*/
+.lt-aside {
+    z-index: 999;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 180px;
+    height: 100%;
+    transition: transform 1s;
+    
+    h4 {
+        margin: 0;
+        height: 50px;
+        line-height: 50px;
+        font-size: 20px;
+        color: #fff;
+        background-color: #3C8DBC;
+        text-align: center;
+    }
+    .info {
+        color: #fff;
+        text-align: center;
+        margin: 30px 0;
+        img {
+            height: 80px;
+            width: 80px;
+            border-radius: 50%;
+        }
+        h5 {
+            font-size:18px
+        }
+    }
+    .lt-nav {
+        margin-top: 50px;
+        ul {
+            li {
+                a {
+                
+                    height: 40px;
+                    line-height: 40px;
+                }
+                .second {
+                    display: none;
+                }
+            }
+            
+        }
+    }
+    
+    
+}
+.hideMenu {
+    transform: translateX(-180px);
+}
+/*首页主体样式*/
+.lt-main {
+    padding-top: 50px;
+    .lt-topbar {
+        height: 50px;
+        line-height: 50px;
+        width: 100%;
+        background-color:red;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: skyblue;
+        transition: padding 1s;
+        span {
+            padding: 0 10px;
+        }
+    }
+    .breadcrumb {
+        margin: 20px 0;
+    }
+    
 }

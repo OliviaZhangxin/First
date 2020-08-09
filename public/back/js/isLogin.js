@@ -1,0 +1,10 @@
+//除了登录页，其他页面在进入前先判断用户是否登录过
+$.ajax({
+    url:'/employee/checkRootLogin',
+    dataType:'json',
+    success:function(info){
+        if(info.error){
+            location.href='./login.html'
+        }
+    }
+})
